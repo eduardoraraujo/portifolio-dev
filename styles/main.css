@@ -1,0 +1,39 @@
+#cardsBox {
+  display: grid;
+  grid-template-columns: repeat(3, 330px);
+  gap: 24px;
+
+  .projectCardBox {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    padding: 12px;
+
+    background-color: var(--gray-300);
+    border-radius: 12px;
+
+    img {
+      width: 306px;
+      border-radius: 8px;
+    }
+
+    .textBox {
+      margin-top: 20px;
+      h3 {
+        font: var(--title-sm);
+        color: var(--gray-600);
+      }
+    }
+  }
+}
+
+.title {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  padding: 72px 163px 56px;
+}
