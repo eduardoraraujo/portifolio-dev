@@ -14,6 +14,10 @@
   color: var(--gray-600);
 }
 
+.contactSpan {
+  font: var(--text-md);
+}
+
 .title {
   display: flex;
   flex-direction: column;

@@ -1,0 +1,37 @@
+#contactsBox {
+  /* display: grid;
+  grid-template-rows: repeat(4, 1fr); */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+}
+
+.contactBox {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  width: 400px;
+  background-color: var(--gray-300);
+  border-radius: 8px;
+
+  .contactStartBox {
+    display: flex;
+    align-items: center;
+    span {
+      margin-left: 8px;
+      font: var(--text-md);
+    }
+  }
+}
+
+.ph-arrow-up-right {
+  font-size: 20px;
+  color: var(--blue);
+}
+
+footer .title span + h2 {
+  margin-bottom: 8px;
+}

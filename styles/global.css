@@ -42,6 +42,10 @@ h1 {
   color: var(--gray-600);
 }
 
+a {
+  text-decoration: none;
+}
+
 p {
   font: var(--text-sm);
 }
@@ -72,4 +76,11 @@ aside {
   background-color: var(--gray-100);
 
   padding-bottom: 120px;
+}
+
+footer {
+  background-image: url(../assets/images/Background_Contacts.png);
+  background-size: 100% 100%;
+
+  padding-bottom: 200px;
 }
