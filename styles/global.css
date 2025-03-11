@@ -64,7 +64,7 @@ main {
 
   background-color: var(--gray-200);
 
-  padding-bottom: 144px;
+  padding: 0 120px 144px;
 }
 
 aside {
