@@ -28,12 +28,3 @@
     }
   }
 }
-
-.title {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-
-  padding: 72px 163px 56px;
-}

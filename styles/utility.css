@@ -1,4 +1,24 @@
 .span {
   font: var(--subtitle);
   color: var(--red);
+  margin-bottom: 8px;
+}
+
+.subtitle-h2 {
+  font: var(--title-md);
+  color: var(--gray-600);
+}
+
+.subtitle-h3 {
+  font: var(--title-sm);
+  color: var(--gray-600);
+}
+
+.title {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  padding: 72px 163px 56px;
 }
