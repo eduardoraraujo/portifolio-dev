@@ -42,15 +42,6 @@ h1 {
   color: var(--gray-600);
 }
 
-h2 {
-  font: var(--title-md);
-  color: var(--gray-600);
-}
-
-h3 {
-  font: var(--subtitle);
-}
-
 p {
   font: var(--text-sm);
 }
@@ -66,7 +57,19 @@ main {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+
   background-color: var(--gray-200);
 
   padding-bottom: 144px;
+}
+
+aside {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  background-color: var(--gray-100);
+
+  padding-bottom: 120px;
 }

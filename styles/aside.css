@@ -1,0 +1,21 @@
+#servicesBox {
+  display: grid;
+  grid-template-columns: repeat(3, 280px);
+  gap: 24px;
+}
+
+.serviceCard {
+  img {
+    margin-bottom: 20px;
+  }
+
+  .serviceTextBox {
+    h2 {
+      margin-bottom: 8px;
+    }
+  }
+
+  border: 2px solid var(--gray-200);
+  padding: 20px;
+  border-radius: 12px;
+}
