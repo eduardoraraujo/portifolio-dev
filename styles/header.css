@@ -9,6 +9,10 @@
     margin-bottom: 20px;
   }
 
+  h3 {
+    font: var(--subtitle);
+  }
+
   p {
     color: var(--gray-400);
   }

@@ -35,6 +35,7 @@
 
 body {
   color: var(--gray-500);
+  background-color: var(--gray-200);
 }
 
 h1 {
@@ -52,8 +53,13 @@ p {
 
 header {
   background-image: url(../assets/images/Background_Intro.png);
-  background-size: 100% 100%;
-  padding: 120px 163px 57px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 750px;
+  margin-top: 120px;
+
+  padding: 47px 163px 57px;
 }
 
 main {
@@ -80,7 +86,9 @@ aside {
 
 footer {
   background-image: url(../assets/images/Background_Contacts.png);
-  background-size: 100% 100%;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 
   padding-bottom: 200px;
 }

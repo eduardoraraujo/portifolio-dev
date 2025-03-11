@@ -12,18 +12,31 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+
   padding: 20px;
   width: 400px;
+
+  transition: box-shadow 0.2s ease-in-out;
   background-color: var(--gray-300);
   border-radius: 8px;
+}
 
-  .contactStartBox {
-    display: flex;
-    align-items: center;
-    span {
-      margin-left: 8px;
-      font: var(--text-md);
-    }
+.contactBox:hover {
+  box-shadow: 0 0 1.2px 1.2px var(--blue);
+
+  img {
+    filter: brightness(0) saturate(100%) invert(46%) sepia(38%) saturate(762%)
+      hue-rotate(175deg) brightness(96%) contrast(92%);
+  }
+}
+
+.contactStartBox {
+  display: flex;
+  align-items: center;
+
+  span {
+    margin-left: 8px;
+    font: var(--text-md);
   }
 }
 
