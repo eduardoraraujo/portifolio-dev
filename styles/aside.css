@@ -1,21 +1,89 @@
 #servicesBox {
   display: grid;
-  grid-template-columns: repeat(3, 280px);
-  gap: 24px;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 32px;
+  max-width: 1000px;
+  width: 100%;
 }
 
 .serviceCard {
+  background: var(--bg-secondary);
+  border: 2px solid var(--border-primary);
+  padding: 32px 24px;
+  border-radius: 16px;
+  transition: var(--transition-normal);
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+  opacity: 0;
+  transform: translateY(30px);
+  animation: fadeInUp 0.8s ease-out forwards;
+
   img {
-    margin-bottom: 20px;
+    margin-bottom: 24px;
+    width: 48px;
+    height: 48px;
+    transition: var(--transition-normal);
+    filter: brightness(0) saturate(100%) invert(46%) sepia(66%) saturate(4492%) hue-rotate(204deg) brightness(95%) contrast(89%);
   }
 
   .serviceTextBox {
     h2 {
-      margin-bottom: 8px;
+      margin-bottom: 12px;
+      color: var(--text-primary);
+      transition: var(--transition-fast);
+    }
+    
+    p {
+      color: var(--text-muted);
+      line-height: 1.6;
     }
   }
 
-  border: 2px solid var(--gray-200);
-  padding: 20px;
-  border-radius: 12px;
+  &:nth-child(1) { animation-delay: 0.1s; }
+  &:nth-child(2) { animation-delay: 0.2s; }
+  &:nth-child(3) { animation-delay: 0.3s; }
+}
+
+.serviceCard::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, transparent, rgba(37, 99, 235, 0.1), transparent);
+  transition: var(--transition-slow);
+}
+
+.serviceCard:hover {
+  transform: translateY(-8px);
+  border-color: var(--primary);
+  box-shadow: var(--shadow-lg);
+  background: rgba(30, 41, 59, 0.8);
+}
+
+.serviceCard:hover::before {
+  left: 100%;
+}
+
+.serviceCard:hover img {
+  transform: scale(1.1) rotate(5deg);
+  filter: brightness(0) saturate(100%) invert(57%) sepia(95%) saturate(3582%) hue-rotate(204deg) brightness(103%) contrast(94%);
+}
+
+.serviceCard:hover .serviceTextBox h2 {
+  color: var(--primary-light);
+}
+
+/* Responsividade para Services */
+@media (max-width: 768px) {
+  #servicesBox {
+    grid-template-columns: 1fr;
+    gap: 24px;
+  }
+  
+  .serviceCard {
+    padding: 24px 20px;
+  }
 }
